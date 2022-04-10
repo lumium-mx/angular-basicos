@@ -5,9 +5,12 @@
   }
   
   html, body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background: white;
     margin: 20px;
     color: #3e4144;
+    font-size:1.2rem;
+    line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
   }
   
@@ -39,17 +42,91 @@
   }
 
   .encabezado {
-    background-color:black;
-    color:white;
-    width: 100%;
-    height: 50px;
+    display: inline-block;
+    background-color: #111;
+    color: white;
+    font-size: 1.5rem;
+    height: 60px;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
   }
+  .nombre-logo{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+  }
+  .nombre{
+    margin: 15px;
+    color: white;
+    text-align: left;
+  }
+  .logo{
+    margin: 15px;
+    color: lightcoral;
+    letter-spacing: 15px;
+    font-size: 1.1em;
+  }
+  .contenedor-logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .contenedor {
-    width: 100%;
     text-align: center;
+    width: 85%;
+    max-width:850px;
+    margin: 0px;
   }
-  .pie {
+
+  .contenido{
+    padding: 0.2rem 1rem;
+    text-align: center;
+    width: 85%;
+    max-width:850px;
+    margin: 0px;
+  }
+  .resumen{
+    display: block;
     width: 100%;
-    background-color:black;
-    color:white;
+  }
+  .resumenactual {
+    width: 40%;
+    font-size: 2em;
+  }
+  .resumenobjetivo {
+    width: 40%;
+    font-size: 2em;
+  }
+  .menu{
+    width: 100%;
+  }
+  .pie{
+    width: 100%;
+    background-color: #222;
+      color: grey;
+      font-size: 1em;
+      width: 100%;
+      height: 100%;
+  
+      position: fixed;
+      left: 0px;
+      right: 0px;
+      bottom: -90%;
+  }
+  .contenidopie{
+    color:grey;
+    width: 85%;
+    max-width:850px;
+    margin: 0px;
+  }
+  .mainmenu{
+    background-color: lightgray;
+  }
+
+  .menu-icon{
+    padding:20px 10px;
+    font-size: 0.7em;
+
   }
